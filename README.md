@@ -12,11 +12,11 @@
 - coffee
 
 ### First, run the "get_grpc.sh" script
-- This will install grpc, protobuf (git submodule), and the examples
-`./get_grpc.sh`
+- This will install grpc, protobuf (git submodule), and the examples.
+- `./get_grpc.sh`
 
 ### Second, build the image from the "Dockerfile"
-- This will build an image and use the grpc files installed by `get_rpc.sh`
+- This will build an image and use the grpc files installed by `get_grpc.sh`
 - *Docker commands on MACOS might not need to be run with  `sudo`!!
 - Make sure to include the `.` in the following command
 - `sudo docker build -t grpc .`
