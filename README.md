@@ -21,13 +21,14 @@
 - Make sure to include the `.` in the following command
 - `sudo docker build -t grpc .`
 
-### Third, create the "workbench" directory that will be shared with the Container
-- This `workbench` directory contains the proto files and cpp examples. We can use these folders to build our labs on top of
+### Third, create the "grpc_workbench" directory that will be shared with the Container
+- This `grpc_workbench` directory contains the proto files and cpp examples. We can use these folders to build our labs on top of
 - `./mk_work_station.sh`
 
 ### Fourth, run the container from the Docker image built
 - *the path after the -v is specific to my computer. CHANGE IT so it can match the location on YOUR machine.
-- `sudo docker run -it -v /home/luiss/cse168/lab1/cpp_grpc_server/grpc_workbench:/app/work_bench --name grpc grpc`
+- the directory `grpc_workbench` is created by the `mk_work_station.sh` script. Share this folder with the container with the `-v` flag like below.
+- `sudo docker run -it -v /home/luiss/cse168/lab1/cse-168-grpc-server/grpc_workbench:/app/work_bench --name grpc grpc`
 - The `-it` flag starts a bash session
 - The `-v` flag lets you share a folder from host : to docker container
 - For example `sudo docker run -v path/on/host:path/on/container container_name_here`
