@@ -32,7 +32,7 @@
 - The `-it` flag starts a bash session
 - The `-v` flag lets you share a folder from host : to docker container
 - For example `sudo docker run -v path/on/host:path/on/container container_name_here`
-- The `run` command should on be run once. All subsequent container starts should be started with the `start` command
+- The `run` command should only run once. All subsequent container starts should be started with the `start` command like the command below
 
 ### Subsequent Container starts
 - `sudo docker start -ai grpc`
