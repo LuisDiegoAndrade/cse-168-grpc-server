@@ -11,6 +11,9 @@
 - make sure bash scripts are executable
 - coffee
 
+### Create a User-Defined Bridge Network.
+- `sudo docker network create grpcnet`
+
 ### First, run the "get_grpc.sh" script
 - This will install grpc, protobuf (git submodule), and the examples.
 - `./get_grpc.sh`
