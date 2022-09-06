@@ -22,7 +22,7 @@
 - `sudo docker build -t grpc .`
 
 ### Third, create the "grpc_workbench" directory that will be shared with the Container
-- This `grpc_workbench` directory contains the proto files and cpp examples. We can use these folders to build our labs on top of
+- This `grpc_workbench` directory contains the proto files and cpp examples. We can use these folders to help build our labs.
 - `./mk_work_station.sh`
 
 ### Fourth, run the container from the Docker image built
