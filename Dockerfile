@@ -9,7 +9,8 @@ WORKDIR /app
 COPY grpc /app/grpc
 WORKDIR  /app/grpc/third_party/protobuf
     
-RUN ./autogen.sh && ./configure --enable-shared && \
+RUN echo "--- installing protobuf ---" && \
+    ./autogen.sh && ./configure --enable-shared && \
     make -j$(nproc) && make -j$(nproc) check && make install && make clean && ldconfig
 
 WORKDIR /app/grpc
