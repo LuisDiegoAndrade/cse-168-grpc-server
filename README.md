@@ -4,7 +4,7 @@
 `git clone https://github.com/LuisDiegoAndrade/cse-168-grpc-server.git`
 
 ## Steps for building Server
-### Check list before continuing below'
+### Check list before continuing below
 - git installed
 - docker installed
 - cloned repo and cd'd into it (i.e `cd cse-168-grpc-server`)
@@ -16,8 +16,8 @@
 `./get_grpc.sh`
 
 ### Second, build the image from the "Dockerfile"
-- This will build an image and use the grpc files installed by "get_rpc.sh"
-- *macos Docker installed might not need to be run with  `sudo`!!
+- This will build an image and use the grpc files installed by `get_rpc.sh`
+- *Docker commands on MACOS might not need to be run with  `sudo`!!
 - Make sure to include the `.` in the following command
 - `sudo docker build -t grpc .`
 
@@ -26,12 +26,12 @@
 - `./mk_work_station.sh`
 
 ### Fourth, run the container from the Docker image built
-- * the path after the -v is specific to my computer change it so it can match the location on your machine.
+- *the path after the -v is specific to my computer. CHANGE IT so it can match the location on YOUR machine.
 - `sudo docker run -it -v /home/luiss/cse168/lab1/cpp_grpc_server/grpc_workbench:/app/work_bench --name grpc grpc`
 - The `-it` flag starts a bash session
 - The `-v` flag lets you share a folder from host : to docker container
 - For example `sudo docker run -v path/on/host:path/on/container container_name_here`
-- The `run` command should on be run once. All subsequent Container starts should be started with the `start` command
+- The `run` command should on be run once. All subsequent container starts should be started with the `start` command
 
 ### Subsequent Container starts
 - `sudo docker start -ai grpc`
