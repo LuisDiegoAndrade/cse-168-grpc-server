@@ -43,11 +43,11 @@
 - run `make clean` to clean up directory
 
 ### Summary
-1 `./get_grpc.sh`
-2 `sudo docker build -t grpc .`
-3 `./mk_work_station.sh`
-4  *CHANGE the following command after the `-v` flag, and before the `:`, to match the path on YOUR machine
-5 `sudo docker run -it -v /home/luiss/cse168/lab1/cse-168-grpc-server/grpc_workbench:/app/work_bench --name grpc grpc`
+- `./get_grpc.sh` (step 1)
+- `sudo docker build -t grpc .` (step 2)
+- `./mk_work_station.sh` (step 3)
+-  *CHANGE the following command after the `-v` flag, and before the `:`, to match the path on YOUR machine
+- `sudo docker run -it -v /home/luiss/cse168/lab1/cse-168-grpc-server/grpc_workbench:/app/work_bench --name grpc grpc` (step 4)
 
 ### Coming soon
 - creating another container for client and connecting to server container over virtual network
