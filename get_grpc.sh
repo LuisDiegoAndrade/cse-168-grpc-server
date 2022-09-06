@@ -7,7 +7,9 @@ export GRPC_RELEASE_TAG="v1.10.x"
 # get grpc source from github
 git clone -b $GRPC_RELEASE_TAG https://github.com/grpc/grpc
 
+
 # get submodules i.e protobuf
+cd grpc
 git submodule update --init
 
 
